@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C77045722CF3572002D5F3B /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77045622CF3572002D5F3B /* UIColor+theme.swift */; };
+		4C77045C22CFE23B002D5F3B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77045B22CFE23B002D5F3B /* Company.swift */; };
 		4CADEF2322CD3D8600EC8039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADEF2222CD3D8600EC8039 /* AppDelegate.swift */; };
 		4CADEF2522CD3D8600EC8039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADEF2422CD3D8600EC8039 /* ViewController.swift */; };
 		4CADEF2822CD3D8600EC8039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CADEF2622CD3D8600EC8039 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		4C77045622CF3572002D5F3B /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
+		4C77045B22CFE23B002D5F3B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		4CADEF1F22CD3D8600EC8039 /* CompaniesIntermediateTrainig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompaniesIntermediateTrainig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CADEF2222CD3D8600EC8039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CADEF2422CD3D8600EC8039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				4CADEF2222CD3D8600EC8039 /* AppDelegate.swift */,
 				4CADEF2422CD3D8600EC8039 /* ViewController.swift */,
 				4C77045622CF3572002D5F3B /* UIColor+theme.swift */,
+				4C77045B22CFE23B002D5F3B /* Company.swift */,
 				4CADEF2622CD3D8600EC8039 /* Main.storyboard */,
 				4CADEF2922CD3D8900EC8039 /* Assets.xcassets */,
 				4CADEF2B22CD3D8900EC8039 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				4C77045722CF3572002D5F3B /* UIColor+theme.swift in Sources */,
 				4CADEF2522CD3D8600EC8039 /* ViewController.swift in Sources */,
 				4CADEF2322CD3D8600EC8039 /* AppDelegate.swift in Sources */,
+				4C77045C22CFE23B002D5F3B /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
