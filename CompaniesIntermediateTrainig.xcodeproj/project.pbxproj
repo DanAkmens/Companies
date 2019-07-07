@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		4C77045722CF3572002D5F3B /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77045622CF3572002D5F3B /* UIColor+theme.swift */; };
 		4C77045C22CFE23B002D5F3B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77045B22CFE23B002D5F3B /* Company.swift */; };
+		4C77045E22CFE8A6002D5F3B /* CreateCompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77045D22CFE8A6002D5F3B /* CreateCompanyController.swift */; };
 		4CADEF2322CD3D8600EC8039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADEF2222CD3D8600EC8039 /* AppDelegate.swift */; };
-		4CADEF2522CD3D8600EC8039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADEF2422CD3D8600EC8039 /* ViewController.swift */; };
+		4CADEF2522CD3D8600EC8039 /* CompaniesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADEF2422CD3D8600EC8039 /* CompaniesController.swift */; };
 		4CADEF2822CD3D8600EC8039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CADEF2622CD3D8600EC8039 /* Main.storyboard */; };
 		4CADEF2A22CD3D8900EC8039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CADEF2922CD3D8900EC8039 /* Assets.xcassets */; };
 		4CADEF2D22CD3D8900EC8039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CADEF2B22CD3D8900EC8039 /* LaunchScreen.storyboard */; };
@@ -19,9 +20,10 @@
 /* Begin PBXFileReference section */
 		4C77045622CF3572002D5F3B /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
 		4C77045B22CFE23B002D5F3B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		4C77045D22CFE8A6002D5F3B /* CreateCompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyController.swift; sourceTree = "<group>"; };
 		4CADEF1F22CD3D8600EC8039 /* CompaniesIntermediateTrainig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompaniesIntermediateTrainig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CADEF2222CD3D8600EC8039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CADEF2422CD3D8600EC8039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CADEF2422CD3D8600EC8039 /* CompaniesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesController.swift; sourceTree = "<group>"; };
 		4CADEF2722CD3D8600EC8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CADEF2922CD3D8900EC8039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CADEF2C22CD3D8900EC8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				4CADEF2222CD3D8600EC8039 /* AppDelegate.swift */,
-				4CADEF2422CD3D8600EC8039 /* ViewController.swift */,
+				4CADEF2422CD3D8600EC8039 /* CompaniesController.swift */,
 				4C77045622CF3572002D5F3B /* UIColor+theme.swift */,
 				4C77045B22CFE23B002D5F3B /* Company.swift */,
+				4C77045D22CFE8A6002D5F3B /* CreateCompanyController.swift */,
 				4CADEF2622CD3D8600EC8039 /* Main.storyboard */,
 				4CADEF2922CD3D8900EC8039 /* Assets.xcassets */,
 				4CADEF2B22CD3D8900EC8039 /* LaunchScreen.storyboard */,
@@ -142,7 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C77045722CF3572002D5F3B /* UIColor+theme.swift in Sources */,
-				4CADEF2522CD3D8600EC8039 /* ViewController.swift in Sources */,
+				4CADEF2522CD3D8600EC8039 /* CompaniesController.swift in Sources */,
+				4C77045E22CFE8A6002D5F3B /* CreateCompanyController.swift in Sources */,
 				4CADEF2322CD3D8600EC8039 /* AppDelegate.swift in Sources */,
 				4C77045C22CFE23B002D5F3B /* Company.swift in Sources */,
 			);

@@ -14,7 +14,7 @@ let companies = [
       Company(name: "Facebook", founded: Date())
 ]
 
-class ViewController: UITableViewController {
+class CompaniesController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,6 @@ class ViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "plus"), style: .plain, target: self, action: #selector(handleAddCompany))
         
-        setupNavigationStyle()
         
         // navigationController?.navigationBar.backgroundColor = UIColor.red
         
@@ -45,6 +44,16 @@ class ViewController: UITableViewController {
     
     @objc func handleAddCompany() {
         print("Adding company...")
+        
+        // creating 2nd screen - UIViewController
+        let createCompanyController = CreateCompanyController()
+        
+        // createCompanyController.view.backgroundColor = .green
+        
+        let navController = CustomeNavigationController(rootViewController: createCompanyController)
+        
+        present(navController, animated: true, completion: nil)
+        
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -75,19 +84,6 @@ class ViewController: UITableViewController {
         return companies.count
     }
     
-    func setupNavigationStyle() {
-        
-        navigationController?.navigationBar.isTranslucent = false
-        
-        
-        
-        navigationController?.navigationBar.barTintColor = .lightRed
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        navigationController?.navigationBar.titleTextAttributes =  [NSAttributedString.Key.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        
-    }
     
     // override var preferredStatusBarStyle: UIStatusBarStyle {
     //    return .lightContent
