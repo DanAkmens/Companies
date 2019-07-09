@@ -8,13 +8,28 @@
 
 import UIKit
 
-let companies = [
-      Company(name: "Apple", founded: Date()),
-      Company(name: "Google", founded: Date()),
-      Company(name: "Facebook", founded: Date())
-]
+
 
 class CompaniesController: UITableViewController {
+    
+    var companies = [
+        Company(name: "Apple", founded: Date()),
+        Company(name: "Google", founded: Date()),
+        Company(name: "Facebook", founded: Date())
+    ]
+    
+    // add company to the list
+    func addCompany(company: Company) {
+        // let tesla = Company(name: "Tesla", founded: Date())
+        
+        // - modify your array
+        companies.append(company)
+        
+        // - insert a new index path into tableView
+        let newIndexPath = IndexPath(row: companies.count - 1, section: 0)
+        tableView.insertRows(at: [newIndexPath], with: .automatic)
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +66,8 @@ class CompaniesController: UITableViewController {
         // createCompanyController.view.backgroundColor = .green
         
         let navController = CustomeNavigationController(rootViewController: createCompanyController)
+        
+        createCompanyController.companiesController = self
         
         present(navController, animated: true, completion: nil)
         
