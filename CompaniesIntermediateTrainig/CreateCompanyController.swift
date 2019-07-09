@@ -8,10 +8,17 @@
 
 import UIKit
 
+// custom delegation
+
+protocol CreateCompanyControllerDelegate  {
+    func didAddCompany(company: Company)
+}
+
 class CreateCompanyController: UIViewController {
     
+    var delegate: CreateCompanyControllerDelegate?
     
-    var companiesController : CompaniesController?
+    // var companiesController : CompaniesController?
     
     // UI Elements, name label closure, text element closure
     let nameLabel : UILabel = {
@@ -55,7 +62,7 @@ class CreateCompanyController: UIViewController {
             
             let company = Company(name: name, founded: Date())
             
-            self.companiesController?.addCompany(company: company)
+            self.delegate?.didAddCompany(company: company)
         }
         
     }

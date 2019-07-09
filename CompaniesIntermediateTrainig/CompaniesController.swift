@@ -10,18 +10,8 @@ import UIKit
 
 
 
-class CompaniesController: UITableViewController {
-    
-    var companies = [
-        Company(name: "Apple", founded: Date()),
-        Company(name: "Google", founded: Date()),
-        Company(name: "Facebook", founded: Date())
-    ]
-    
-    // add company to the list
-    func addCompany(company: Company) {
-        // let tesla = Company(name: "Tesla", founded: Date())
-        
+class CompaniesController: UITableViewController, CreateCompanyControllerDelegate {
+    func didAddCompany(company: Company) {
         // - modify your array
         companies.append(company)
         
@@ -29,6 +19,27 @@ class CompaniesController: UITableViewController {
         let newIndexPath = IndexPath(row: companies.count - 1, section: 0)
         tableView.insertRows(at: [newIndexPath], with: .automatic)
     }
+    
+    
+    var companies = [
+        Company(name: "Apple", founded: Date()),
+        Company(name: "Google", founded: Date()),
+        Company(name: "Facebook", founded: Date())
+    ]
+    
+    // This aproach is working, using delegate instead
+    
+//    // add company to the list
+//    func addCompany(company: Company) {
+//        // let tesla = Company(name: "Tesla", founded: Date())
+//
+//        // - modify your array
+//        companies.append(company)
+//
+//        // - insert a new index path into tableView
+//        let newIndexPath = IndexPath(row: companies.count - 1, section: 0)
+//        tableView.insertRows(at: [newIndexPath], with: .automatic)
+//    }
 
 
     override func viewDidLoad() {
@@ -67,7 +78,7 @@ class CompaniesController: UITableViewController {
         
         let navController = CustomeNavigationController(rootViewController: createCompanyController)
         
-        createCompanyController.companiesController = self
+        createCompanyController.delegate = self
         
         present(navController, animated: true, completion: nil)
         
